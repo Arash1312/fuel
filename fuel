@@ -71,3 +71,7 @@ dependencies": {
 "@fuel-ts/abi-coder": "workspace:*",
     "@fuel-ts/abi-typegen": "workspace:*",
     "@fuel-ts/address": "workspace:*",
+"@fuel-ts/abi-coder": "workspace:*",
+    "@fuel-ts/abi-typegen": "workspace:*",
+    "@fuel-ts/address": "workspace:*",
+    "@fuel-ts/contract": "workspace:*",
