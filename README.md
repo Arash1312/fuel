@@ -1,12 +1,4 @@
-{
-  "private": true,
-  "name": "@internal/check-imports",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc --noEmit"
-  },
+
   "license": "Apache-2.0",
   "dependencies": {
     "@fuel-ts/abi-coder": "workspace:*",
@@ -48,6 +40,14 @@ dependencies": {
     "@fuel-ts/versions": "workspace:*",
     "@fuel-ts/account": "workspace:*",
     "fuels": "workspace:*"
+  },{
+  "private": true,
+  "name": "@internal/check-imports",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit"
   },
 {
   "private": true,
