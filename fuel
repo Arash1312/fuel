@@ -2,7 +2,11 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    
+     "@fuel-ts/math": "workspace:*",
+    "@fuel-ts/merkle": "workspace:*",
+    "@fuel-ts/program": "workspace:*",
+    "@fuel-ts/script": "workspace:*",
+    "@fuel-ts/abi-coder": "workspace:*",
     
     "@fuel-ts/math": "workspace:*",
     "@fuel-ts/merkle": "workspace:*",
