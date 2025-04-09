@@ -2,11 +2,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-     "@fuel-ts/math": "workspace:*",
-    "@fuel-ts/merkle": "workspace:*",
-    "@fuel-ts/program": "workspace:*",
-    "@fuel-ts/script": "workspace:*",
-    "@fuel-ts/abi-coder": "workspace:*",
+  
     
     "@fuel-ts/math": "workspace:*",
     "@fuel-ts/merkle": "workspace:*",
@@ -21,6 +17,11 @@
     "@fuel-ts/versions": "workspace:*",
     "@fuel-ts/account": "workspace:*",
     "fuels": "workspace:*"
+   "@fuel-ts/math": "workspace:*",
+    "@fuel-ts/merkle": "workspace:*",
+    "@fuel-ts/program": "workspace:*",
+    "@fuel-ts/script": "workspace:*",
+    "@fuel-ts/abi-coder": "workspace:*",
   },
 6Ew6Gx1dLZ7Cp1oFhjmnfQvCdgxKAWerqEaeU3UUUGVg
   "version": null
