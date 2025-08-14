@@ -2,7 +2,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-  
+  "@fuel-ts/crypto": "workspace:*",
+    "@fuel-ts/errors": "workspace:*",
+    "@fuel-ts/hasher": "workspace:*",
     
     "
 6Ew6Gx1dLZ7Cp1oFhjmnfQvCdgxKAWerqEaeU3UUUGVg
@@ -22,9 +24,7 @@
   "name": "@internal/check-imports",
   "files": [
     "dist"
- "@fuel-ts/crypto": "workspace:*",
-    "@fuel-ts/errors": "workspace:*",
-    "@fuel-ts/hasher": "workspace:*",
+ 
     "@fuel-ts/interfaces": "workspace:*",
   "scripts": {
     "build": "tsc --noEmit"
