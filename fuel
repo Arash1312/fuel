@@ -56,7 +56,11 @@
     "@fuel-ts/account": "workspace:*",
     "fuels": "workspace:*"
    "@fuel-ts/math": "workspace:*",
-    "@fuel-ts/merkle": "workspace:*",
+    "
+  "private": true,
+  "name": "@internal/check-imports",
+  "files": [
+    "dist"
     "@fuel-ts/program": "workspace:*",
     "@fuel-ts/script": "workspace:*",
     "@fuel-ts/abi-coder": "workspace:*",
