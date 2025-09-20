@@ -24,7 +24,9 @@
   "name": "@internal/check-imports",
   "files": [
     "dist"
- 
+   "
+6Ew6Gx1dLZ7Cp1oFhjmnfQvCdgxKAWerqEaeU3UUUGVg
+  "version": null
     "@fuel-ts/interfaces": "workspace:*",
   "scripts": {
     "build": "tsc --noEmit"
