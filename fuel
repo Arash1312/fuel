@@ -1,4 +1,7 @@
-{
+{"private": true,
+  "name": "@internal/check-imports",
+  "files": [
+    "dist"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -13,10 +16,7 @@
 
   },
 {
-  "private": true,
-  "name": "@internal/check-imports",
-  "files": [
-    "dist"
+  
   ],
  "@fuel-ts/abi-coder": "workspace:*",
     
