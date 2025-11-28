@@ -1,18 +1,4 @@
-import requests
-import json
-import schedule
-import time
-import json
-from smart_gas_api import SmartGasValve
- def turn_off(self):
-        headers = {"Authorization": f"Bearer {self.api_key}"}
-        try:
-            response = requests.post(self.api_url, headers=headers, timeout=5)
-            if response.status_code == 200:
-class SmartGasValve:
-    def __init__(self, api_url, api_key):
-        self.api_url = api_url
-        self.api_key = api_key
+
 
    
                 print("Smart valve turned OFF safely.")
@@ -43,3 +29,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+import requests
+import json
+import schedule
+import time
+import json
+from smart_gas_api import SmartGasValve
+ def turn_off(self):
+        headers = {"Authorization": f"Bearer {self.api_key}"}
+        try:
+            response = requests.post(self.api_url, headers=headers, timeout=5)
+            if response.status_code == 200:
+class SmartGasValve:
+    def __init__(self, api_url, api_key):
+        self.api_url = api_url
+        self.api_key = api_key
