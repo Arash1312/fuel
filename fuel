@@ -25,13 +25,6 @@ from smart_gas_api import SmartGasValve
  def turn_off(self):
         headers = {"Authorization": f"Bearer {self.api_key}"}
         try:import requests
-import json
-import schedule
-import time
-import json
-   def load_config():
-    with open("config.json", "r") as f:
-        return json.load(f)
 
 def main():
     cfg = load_config()
@@ -44,3 +37,10 @@ class SmartGasValve:
     def __init__(self, api_url, api_key):
         self.api_url = api_url
         self.api_key = api_key
+import json
+import schedule
+import time
+import json
+   def load_config():
+    with open("config.json", "r") as f:
+        return json.load(f)
