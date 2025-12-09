@@ -11,7 +11,13 @@
                 print(f"Error: {response.status_code} - {response.text}")
         except Exception as e:
             print("Connection failed:", e)
-
+try:import requests
+    if response.status_code == 200:
+class SmartGasValve:
+    def __init__(self, api_url, api_key):
+        self.api_url = api_url
+        self.api_key = api_key
+import json
 
     )
 
@@ -31,13 +37,7 @@ def main():
     cfg = load_config()
 
   
-        try:import requests
-    if response.status_code == 200:
-class SmartGasValve:
-    def __init__(self, api_url, api_key):
-        self.api_url = api_url
-        self.api_key = api_key
-import json
+        
 import schedule
 import time
 import json
