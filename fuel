@@ -5,7 +5,10 @@
  def turn_off(self):
         headers = {"Authorization": f"Bearer {self.api_key}"}
 
-   
+    # schedule the shutdown time
+    schedule.every().day.at(cfg["off_time"]).do(valve.turn_off)
+    print(f"Scheduled gas valve OFF at {cfg['off_time']}")
+
                 print("Smart valve turned OFF safely.")
             else:
                 print(f"Error: {response.status_code} - {response.text}")
@@ -21,10 +24,7 @@ import json
 
     )
 
-    # schedule the shutdown time
-    schedule.every().day.at(cfg["off_time"]).do(valve.turn_off)
-    print(f"Scheduled gas valve OFF at {cfg['off_time']}")
-
+   
     while True:
         schedule.run_pending()
         time.sleep(1)
