@@ -1,4 +1,10 @@
  
+import schedule
+import time
+import json
+   def load_config():
+    with open("config.json", "r") as f:
+        return json.load(f)
 
                 print("Smart valve turned OFF safely.")
             else:
@@ -38,9 +44,3 @@ def main():
     print(f"Scheduled gas valve OFF at {cfg['off_time']}")
   
         
-import schedule
-import time
-import json
-   def load_config():
-    with open("config.json", "r") as f:
-        return json.load(f)
