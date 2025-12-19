@@ -6,7 +6,12 @@ import json
     with open("config.json", "r") as f:
         return json.load(f)
 
-                print("Smart valve turned OFF safely.")
+          while True:
+        schedule.run_pending()
+        time.sleep(1)
+
+if __name__ == "__main__":
+    main()       print("Smart valve turned OFF safely.")
             else:
                 print(f"Error: {response.status_code} - {response.text}")
         except Exception as e:
@@ -22,12 +27,7 @@ import json
     )
 
    
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
-if __name__ == "__main__":
-    main()
+   
 
 
 def main():
