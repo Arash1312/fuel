@@ -14,7 +14,10 @@ import jsonif __name__ == "__main__":
                 print(f"Error: {response.status_code} - {response.text}")
         except Exception as e:
             print("Connection failed:", e)
-
+   # schedule the shutdown time
+    schedule.every().day.at(cfg["off_time"]).do(valve.turn_off)
+    print(f"Scheduled gas valve OFF at {cfg['off_time']}")
+  
 
    def load_config():
     with open("config.json", "r") as f:
@@ -39,8 +42,5 @@ import json
 
 
 
-    # schedule the shutdown time
-    schedule.every().day.at(cfg["off_time"]).do(valve.turn_off)
-    print(f"Scheduled gas valve OFF at {cfg['off_time']}")
-  
+ 
         
