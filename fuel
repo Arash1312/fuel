@@ -1,4 +1,13 @@
- def main():
+ def main():try:import requests
+    if response.status_code == 200:
+class SmartGasValve:
+    def __init__(self, api_url, api_key):
+        self.api_url = api_url
+        self.api_key = api_key
+import json
+          while True:
+        schedule.run_pending()
+        time.sleep(1)
     cfg = load_config()
  valve = SmartGasValve(
         api_url=cfg["device_api"],
@@ -22,16 +31,7 @@ import jsonif __name__ == "__main__":
    def load_config():
     with open("config.json", "r") as f:
         return json.load(f)
-try:import requests
-    if response.status_code == 200:
-class SmartGasValve:
-    def __init__(self, api_url, api_key):
-        self.api_url = api_url
-        self.api_key = api_key
-import json
-          while True:
-        schedule.run_pending()
-        time.sleep(1)
+
 
 
     )
